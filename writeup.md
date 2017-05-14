@@ -90,11 +90,11 @@ cv2 (Conv2D)                  |(None, 64, 64, 64)  |   18496
 max_pooling2d_2 (MaxPooling2D)|(None, 8, 8, 64)    |   0         
 dropout_6 (Dropout)           |(None, 8, 8, 64)    |   0         
 fcn (Conv2D)                  |(None, 1, 1, 1)     |   4097      
-**_Total params:_**           |                    |**27,681**
-**_Trainable params:_**       |                    |**27,681**
+**Total params:**             |                    |**27,681**
+**Trainable params:**         |                    |**27,681**
 
 
-With as little as **_27,681_** parameters, it still produces the **test accuracy** of about **99,4%**.
+With as little as **27,681** parameters, it still produces the **test accuracy** of about **99,4%**.
 
 ```
 607/607 [==============================] - 54s - loss: 0.0764 - acc: 0.8940 - val_loss: 0.0213 - val_acc: 0.9778
@@ -140,8 +140,8 @@ cv2 (Conv2D)                  |(None, 260, 1280, 64)  |   18496
 max_pooling2d_2 (MaxPooling2D)|(None, 32, 160, 64)    |   0         
 dropout_6 (Dropout)           |(None, 32, 160, 64)    |   0         
 fcn (Conv2D)                  |(None, 25, 153, 1)     |   4097      
-**_Total params:_**           |                       |**27,681**
-**_Trainable params:_**       |                       |**27,681**
+**Total params:**             |                       |**27,681**
+**Trainable params:**         |                       |**27,681**
 
 As can be seen, the top convolutional layer now has the dimensionality of (? ,**25**, **153**, 1), where **25x53**
 actually represents a miniature **map** of predictions that will ultimately be projected to the original hi-res image.
