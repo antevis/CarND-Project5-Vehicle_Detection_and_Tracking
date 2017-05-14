@@ -10,7 +10,7 @@
 [vehicle]: ./img/smart.png
 [lexus]: ./img/whiteLexusPrediction.png
 [undistorted]: ./img/undistorted.png
-[dataset]: ./img/dataset.png
+[dataset]: ./img/datasetHigh.png
 
 ---
 
@@ -58,7 +58,7 @@ used for training, validation and testing was about 7500.
 
 ![alt text][dataset]
 
-As mentinoned above, equal number of non-vehicles images has been added as a negative examples.
+As mentioned above, equal number of non-vehicles images has been added as a negative examples.
 
 
 ---
