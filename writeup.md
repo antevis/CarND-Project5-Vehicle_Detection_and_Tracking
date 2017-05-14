@@ -51,7 +51,7 @@ For training I used the datasets provided by Udacity: KITTI-extracted part of
 [vehicles](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) and a corresponding number of samples
 from [non-vehicles](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip), randomly sampled.
 
-The Final model had difficulties in detecting white Lexus it the Project video, so I augmented the dataset with about 200
+The Final model had difficulties in detecting white Lexus in the Project video, so I augmented the dataset with about 200
 samples of it. Additionally, I used the same random image augmentation technique as in Project 2 for Traffic Signs
 Classification, yielding about 1500 images of vehicles from the Project video. The total number of vehicle's images 
 used for training, validation and testing was about 7500.
@@ -157,11 +157,11 @@ The undistorted version of the imaged being passed to `VehicleScanner.relevantBo
 
 `VehicleScanner` performs the following tasks:
 
-1. Obtains the region of interest (260x1280 starting with 400th pixel from the top of the image). (line 43 of `scanner.py`)
+1. Obtains the region of interest (260x1280 starting with 400th pixel from the top of the image). 
+(line 43 of `scanner.py`)
 ![alt text][roi]
 
-2. Produces the **detection map**
-The raw Model's output from this particular image (lines 45 - 52 of `scanner.py`):
+2. Produces the **detection map** (lines 45 - 52 of `scanner.py`):
 ![alt text][rawPredictions]
 Note the dimensionality is 25x153
 
