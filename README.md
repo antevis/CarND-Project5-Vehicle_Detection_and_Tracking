@@ -12,9 +12,6 @@
 [undistorted]: ./img/undistorted.png
 [dataset]: ./img/dataset.png
 
-
-[video1]: ./img.mp4
-
 ---
 
 ## **Vehicle Detection Project**
@@ -235,7 +232,7 @@ the history accumulates bounding boxes from at least that number of frames (line
 I've merged Vehicle and Lane detections into a single pipeline to produce a combined footage with both the Lane and
 vehicles bounding boxes. It may be invoked directly from the Terminal with `python Detector.py`.
 
-Here's the [result](./project_video.mp4)
+Here's the [result](./project_video_out_2017_5_14_4_19_0.mp4)
 
 
 ### Discussion
